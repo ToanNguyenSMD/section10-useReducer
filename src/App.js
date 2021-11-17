@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import MainHeader from './components/MainHeader/MainHeader';
 import TodoApp from './components/TodoApp/TodoApp';
+import UseContext from './components/UseContext/UseContext'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,14 +33,16 @@ function App() {
 
   return (
     <React.Fragment>
-      <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
-      <main>
+      {/* <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} /> */}
+      {/* <main>
         {!isLoggedIn && <Login onLogin={loginHandler} />}
         {isLoggedIn && <Home onLogout={logoutHandler} />}
-      </main>
+      </main> */}
 
       {/*  HOC O F8 */}
       {/* <TodoApp /> */}
+      <UseContext />
+
 
     </React.Fragment>
   );

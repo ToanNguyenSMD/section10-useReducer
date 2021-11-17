@@ -14,3 +14,7 @@ body {
 main {
   margin-top: 6rem;
 }
+.dark {
+  color: #fff;
+  background-color: #333;
+}
